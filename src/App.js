@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import DisplayPosts from './components/DisplayPosts';
+import AddEntryForm from './components/AddEntryForm';
 
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
   
   return (
     <div>
-      <DisplayPosts entries = {entries}/>
+      <DisplayPosts entries = {entries} />
+      <AddEntryForm />
 
     </div>
   );
