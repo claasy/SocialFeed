@@ -1,6 +1,6 @@
 const Post = (props) => {
     return ( 
-
+        <></>
      );
 }
  

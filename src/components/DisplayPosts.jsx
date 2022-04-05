@@ -1,9 +1,10 @@
 import React from 'react';
+import Post from './Post';
 
 const DisplayPosts = ({entries}) => {
   
     return (<ul>
-        {entries.map((entry,i)=> <li>listItem</li>)}
+        {entries.map((entry,i)=> <li><Post/></li>)}
     </ul>  );
 
 }
