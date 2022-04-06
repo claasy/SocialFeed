@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
-const Post = (props) => {
-    return ( 
-        <>
-    
+
+
+const Post = ({record}) => {
+    return (
+        <div className="card">
+            <div className="container">
+                <h4> {record.name} </h4>
+                <p> {record.post} </p>
+                <button>Submit</button>     
+                <button>I Like Amanda</button>   
+            </div>
+        
+        </div>
+        )
+{/*     
     const Switch = () => {
         return(
             <>
@@ -21,7 +32,7 @@ const Post = (props) => {
                     <span className={`react-switch-button`} />
                 </label>
             </>
-     );
+     ); */}
 };
  
 export default Post;
