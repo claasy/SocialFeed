@@ -9,30 +9,12 @@ const Post = ({record}) => {
             <div className="container">
                 <h4> {record.name} </h4>
                 <p> {record.post} </p>
-                <button>Submit</button>     
-                <button>I Like Amanda</button>   
+                <button></button>     
+                <button></button> 
+               
             </div>
         
         </div>
         )
-{/*     
-    const Switch = () => {
-        return(
-            <>
-            
-                <input
-                    className="react-switch-checkbox"
-                    id={`react-switch-new`}
-                    type="checkbox"
-                />
-                <label
-                    className="react-switch-label"
-                    htmlFor={`react-switch-new`}
-                >
-                    <span className={`react-switch-button`} />
-                </label>
-            </>
-     ); */}
-};
- 
+    }
 export default Post;

@@ -19,14 +19,6 @@ function App() {
     }
   ]);
 
-  const tempTestRcd = {
-    name: "Cash",
-    post: "Some cool text from an awesome instructor",
-  };
-  const tempTestRcd2 = {
-    name: "JJ",
-    post: "Some cool text from an awesome instructor",
-  };
 
   function addNewPost(entry) {
     let tempEntries = [entry, ...entries];
@@ -38,8 +30,6 @@ function App() {
       <NavBar />
       <CreatePost addNewPostProperty={addNewPost} />
       <DisplayPosts entries={entries} />
-      <Post record={tempTestRcd} />
-      <Post record={tempTestRcd2} />
     </div>
   );
 }
