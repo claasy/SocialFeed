@@ -1,13 +1,22 @@
-import React from 'react';
-import Post from './Post';
+
 
 const DisplayPosts = ({entries}) => {
   
-    return (<ul>
-        {entries.map((entry,i)=> <li><Post/></li>)}
-    </ul>  );
-
+    return (
+        <div class="media-body"> 
+        {entries.map((entry) => {
+            return (
+            <><h4 class="media-heading">{entry.name}</h4><div>{entry.post}</div></>
+            );  
+        
+        })}    
+        </div>
+);
 }
+    
+ 
+
+
  
 export default DisplayPosts;
 
