@@ -3,6 +3,7 @@ import DisplayPosts from "./components/DisplayPosts";
 import CreatePost from "./components/CreatePost";
 import Post from "./components/Post";
 import NavBar from "./components/NavBar";
+import './App.css';
 
 function App() {
   //general entry/entries
@@ -26,10 +27,28 @@ function App() {
   }
 
   return (
-    <div>
-      <NavBar />
-      <CreatePost addNewPostProperty={addNewPost} />
-      <DisplayPosts entries={entries} />
+    <div className='container-fluid'>
+      <div className='row'>
+        <div className='card'>
+        <div className='border-box'>
+          <NavBar />
+        </div>
+        </div>
+      </div>
+      <div className='row'>
+        <div className='card'>
+        <div className='border-box'>
+          <CreatePost addNewPostProperty={addNewPost} />
+        </div>
+        </div>
+      </div>
+      <div className='row'>
+        <div className='card'>
+        <div className='border-box'>
+          <DisplayPosts entries={entries} />
+        </div>
+        </div>
+      </div>
     </div>
   );
 }
