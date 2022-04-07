@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import DisplayPosts from "./components/DisplayPosts";
 import CreatePost from "./components/CreatePost";
-import Post from "./components/Post";
 import NavBar from "./components/NavBar";
 import './App.css';
 import './components/CustomButton/CustomButton';
 
 function App() {
-  
+
   const [entries, setEntries] = useState([
     {
       name: "David Lagrange",
