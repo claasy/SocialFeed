@@ -4,9 +4,10 @@ import CreatePost from "./components/CreatePost";
 import Post from "./components/Post";
 import NavBar from "./components/NavBar";
 import './App.css';
+import './components/CustomButton/CustomButton';
 
 function App() {
-  //general entry/entries
+  
   const [entries, setEntries] = useState([
     {
       name: "David Lagrange",

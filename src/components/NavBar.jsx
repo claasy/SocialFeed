@@ -3,8 +3,8 @@ import React from 'react';
 
 const NavBar = (props) => {
     return ( 
-        <h1>SocialFeed</h1>
-
+        <h1>Social
+        <small className='text-muted'>Feed</small></h1>
      );
 }
  

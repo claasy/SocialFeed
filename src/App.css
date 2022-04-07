@@ -6,6 +6,10 @@
     padding: 1em;
 }
 
+.card {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: .65em;
+}
 
 
 /* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

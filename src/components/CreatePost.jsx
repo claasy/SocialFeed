@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './CreatePost.css';
 
 const CreatePost = (props) => {
 
@@ -16,7 +17,7 @@ const CreatePost = (props) => {
     }
 
     return ( 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='form-grid'>
             <div className='form-group'>
                 <label>Name</label>
                 <input type='string' className="form-control" value={name} onChange={(event) => setName(event.target.value)} />
